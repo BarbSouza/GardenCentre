@@ -1,10 +1,7 @@
-# GardenCentre
-Console-based Java shopping app for a garden centre seed shop. Demonstrates OOP principles (abstract classes, inheritance, encapsulation, method overriding) with stock tracking, trolley management and checkout. 1st-year CA, CCT College Dublin.
-
 # 🌻 Garden Centre – Seed Shop (Java OOP)
 
 A console-based shopping application for a garden centre that sells flower seeds.
-Built as my Year 1 Object-Oriented Programming assessment at CCT College Dublin (2024).
+Built individually for the **Programming – Object Oriented Approach** module (Year 1, CCT College Dublin), completed in May 2024.
 
 ## Overview
 Users can browse available seeds, view detailed plant information, add items to a
@@ -23,7 +20,7 @@ with a running total. Stock levels update in real time as items are added.
 ## OOP Concepts Demonstrated
 - **Abstraction** – `Seeds` is an abstract parent class defining shared properties
   and an abstract `buy()` method
-- **Inheritance** – `Sunflower`, `Poppy`, `Daisy`, `Lily` and `Lavender` extend `Seeds`
+- **Inheritance** – `Sunflower`, `Poppy`, `Daisy`, `Lily` and `Lavander` extend `Seeds`
 - **Polymorphism** – each subclass overrides `buy()`; items are stored and handled
   as a single `ArrayList<Seeds>`
 - **Encapsulation** – private fields accessed through getters, with stock changed
@@ -34,13 +31,30 @@ with a running total. Stock levels update in real time as items are added.
 - `gardencentre/ShoppingTrolley.java` – menu, trolley and checkout logic
   (extended from starter code provided for the module)
 - `seeds/Seeds.java` – abstract parent class
-- `seeds/Sunflower.java`, `Poppy.java`, `Daisy.java`, `Lily.java`, `Lavender.java` – product classes
+- `seeds/Sunflower.java`, `Poppy.java`, `Daisy.java`, `Lily.java`, `Lavander.java` – product classes
 
 ## Tech
 Java · Apache Ant · NetBeans
 
 ## How to Run
+You need Java 8 or later.
+
+Run the packaged app:
+```bash
 java -jar GardenCentre_CA.jar
+```
+
+Or compile and run from source:
+```bash
+mkdir out
+javac -d out gardencentre/*.java seeds/*.java
+java -cp out gardencentre.GardenCentre
+```
+
+## Notes and known limitations
+- This is a Year 1 project and is kept as it was submitted.
+- The lavender class is spelled `Lavander` in the code.
+- Stock and the trolley are kept in memory, so they reset each time the app starts.
 
 ## Credits
 Plant information sourced from Seeds Ireland (seedsireland.ie).
