@@ -53,6 +53,7 @@ java -cp out gardencentre.GardenCentre
 
 ## Notes and known limitations
 - This is a Year 1 project and is kept as it was submitted.
+- The project was uploaded to GitHub in 2026. The commit that adds the source code is dated 21 May 2024, when the app was completed.
 - The lavender class is spelled `Lavander` in the code.
 - Stock and the trolley are kept in memory, so they reset each time the app starts.
 
